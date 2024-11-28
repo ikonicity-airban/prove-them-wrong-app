@@ -1,6 +1,7 @@
 import Clicker from "@/components/home/clicker";
 import DailyTask from "@/components/tasks/daily-task";
 import Link from "next/link";
+import PointCounter from "@/components/home/point-counter";
 
 const data = [
   {
@@ -47,6 +48,7 @@ function Summary() {
 export default function Home() {
   return (
     <div className="font-[family-name:var(--font-geist-sans)] w-full px-6 flex flex-col items-center gap-4 min-h-screen">
+      <PointCounter />
       <Clicker />
       <Summary />
       <DailyTask title="Daily Tasks" />

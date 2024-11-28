@@ -75,4 +75,20 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+  .bubble {
+    position: absolute;
+    font-size: xx-large;
+    animation: rise 1000ms forwards;
+  }
+
+  @keyframes rise {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-200px); /* Adjust height of rise */
+      opacity: 0;
+    }
+  }
 }

@@ -1,5 +1,5 @@
 "use client";;
-import { useState } from "react";
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Coins } from "lucide-react";
 import {
@@ -9,7 +9,9 @@ import {
   SheetHeader,
   SheetTitle,
 } from "@/components/ui/sheet";
+
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 interface Task {
   id: number;
